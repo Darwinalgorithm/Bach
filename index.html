@@ -16,29 +16,35 @@
 <body>
     <header>
         <nav>
-            <ol>
-                <li><a href="#1"> 1, Description</a></li>
-                <li><a href="#2"> 2, Célébrité</a></li>
-                <li><a href="#2.1"> 2.1, La musique la plus écoutée de Jean-Sébastien Bach</a></li>
-                <li><a href="#2.2"> 2.2, Autres titres remarquables </a></li>
-                <li><a href="#3"> 3, Créations</a></li>
-                <li><a href="#4"> 4, Reprises contemporaines</a></li>
-                <li><a href="#5"> 5, Emissions et écrits sur Bach et les mathématiques dans sa musique </a></li>
-                <!-- attention pas d'accent ou d'espace dans le # et utiliser le CamelCase -->
-            </ol>
+
+            <div>
+                <ol class="container">
+                    <li class="flex"><a href="#1"> Description</a></li>
+                    <li class="flex"><a href="#2"> Célébrité</a></li>
+                    <li class="flex"><a href="#2.1"> La musique la plus écoutée de Bach</a></li>
+                    <li class="flex"><a href="#2.2"> Autres titres remarquables </a></li>
+                    <li class="flex"><a href="#3"> Créations</a></li>
+                    <li class="flex"><a href="#4"> Reprises contemporaines</a></li>
+                    <li class="flex"><a href="#5"> Emissions et écrits sur Bach et les mathématiques dans sa musique
+                        </a></li>
+                </ol>
+            </div>
+            <!-- attention pas d'accent ou d'espace dans le # et utiliser le CamelCase + le # renvoie en effet à l'intérieur même du site -->
+
         </nav>
     </header>
+
     <main>
 
         <h1>
-            JEAN-SÉBASTIEN BACH (1685-1750)
+            Jean-Sébastien Bach (1685-1750)
         </h1>
 
 
-        <div id="photo">  </a> <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Young_Bach2.jpg"
+        <div id="photo"> </a> <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Young_Bach2.jpg"
                 alt="Portrait de Bach en 1715" ; width="250"></div>
-                
-      
+
+
 
         <p>
         <blockquote>
@@ -53,7 +59,7 @@
         <!-- bon la citation c'est galère, autant passer par le css et faire des citations marginales et le note [fn] pas clair pour moi pour l'instant, voir la Bible MDN!!! fonction a aussi avec référence intérieure mieux-->
         <hr>
 
-        <h2 id="1">DESCRIPTION</h2> <!-- source wikipedia -->
+        <h2 id="1">Description</h2> <!-- source wikipedia -->
 
         <p>Compositeur et musicien allemand né le 21 mars 1685. Jamais il n'obtient un poste à la mesure de son génie et
             de son importance dans l'histoire de la musique occidentale, malgré la considération de certains souverains
@@ -66,9 +72,11 @@
             l'harmonie.</p>
         <p>Jean-Sébastien Bach est un virtuose de plusieurs instruments, le violon et l'alto, mais surtout le clavecin
             et l'orgue. Son œuvre, comprenant plus de mille compositions, peu connue de son vivant au-dehors de
-            l'Allemagne, passée de mode et plus ou moins oubliée après sa mort, puis pleinement redécouverte au XIXe siècle, 
+            l'Allemagne, passée de mode et plus ou moins oubliée après sa mort, puis pleinement redécouverte au XIXe
+            siècle,
             est généralement considérée comme l'aboutissement et le couronnement de la tradition musicale du
-            <strong>baroque</strong> : elle fait l'admiration des plus grands musiciens, conscients de son extraordinaire valeur artistique. 
+            <strong>baroque</strong> : elle fait l'admiration des plus grands musiciens, conscients de son
+            extraordinaire valeur artistique.
             Objet d'un véritable culte chez de nombreux musicologues et musiciens, Jean-Sébastien
             Bach est considéré, depuis sa redécouverte au XIXe siècle, comme un des plus grands compositeurs de tous les
             temps, si ce n'est comme le plus grand.
@@ -76,12 +84,11 @@
 
 
 
-        <hr>
+        <h2 id="2">Célébrité</h2>
+        <p> <span style="color: red;"> <b>946 687</b></span> Fans sur Deezer le 28 octobre 2024. </p>
 
-        <h2 id="2">CÉLÉBRITÉ ET AUDIMAT</h2>
-        <p> <span style="color: red; 946 687 </span> Fans sur Deezer le 28 octobre 2024. </p> 
-           <p>
-            <a> 
+        <p>
+            <a>
                 href="https://www.deezer.com/fr/artist/1900">Lien vers Deezer</a>
         </p>
 
@@ -106,14 +113,17 @@
 
             <h3 id="2.2">Autres titres remarquables</h3>
             <!-- Mais pourquoi il y a un décallage sur la droite ??? ah je suis dans la liste surement, donc h3 -->
-            <li>Cantata BWV 147, Concerto brandebourgeois n° 4 - Andante </li>
+            <li>Cantata BWV 147, Concerto brandebourgeois n° 4 - Andante, Herz und Mund und Tat und Leben (Le cœur, et
+                la bouche, et l'action, et la vie) chorale 10 : "Jesu, Joy of Man's Desiring". Ce titre est souvent
+                entendu dans les mariages. </li>
+            <a href="https://www.youtube.com/watch?v=GWtoeYznx8E">=> écouter le titre</a>
             <li>Cello suite en Do Majeur, BWV 1007</li> <a
                 href="https://www.youtube.com/watch?v=cGnZHIY_hoQ&list=PLecKPCyj4yROEWW268aqNqgeo0tiehjZf&ab_channel=NetherlandsBachSociety">
                 => écouter le titre </a>
         </ol>
-        <hr>
 
-        <h2 id="3">CRÉATIONS</h2>
+
+        <h2 id="3">Créations</h2>
         <ul></ul>
         <li>Toccata et fugue en ré mineur (entre 1703 et 1707) <a
                 href="https://www.youtube.com/watch?v=T1b4R-g4oHY&ab_channel=Musiqueclassique"><br>=> écouter le
@@ -148,14 +158,22 @@
         </ul>
 
         <h2 id="4">Reprises contemporaines, reprenant Bach</h2>
+        <p>
+            Une interprétation de Cally's mashup
+
+        </p>
+        <a href="https://www.youtube.com/watch?v=7j817qnYGtI">visionner</a>
 
         <p> <span style="color: red;"> Red Velvet</span>, groupe sud-coréen fondé en 2014.</p>
         <p> <span style="color: red;"> Cliquez sur l'image du groupe pour lancer la vidéo youtube !</span> </p>
         <p>
-            <a href="https://www.youtube.com/embed/R9At2ICm4LQ?si=FARa7hC851peLFv9">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/7j817qnYGtI"
+                title="KALLY&#39;S Mashup Cast - Make It Home (Official Video) ft. Maia Reficco" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3%28Red_Velvet%29_%EC%BC%80%EC%9D%B4%EC%BD%98_%EC%9E%AC%ED%8C%AC_2024_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_KCON_JAPAN_2024_%281%29.jpg/1280px-%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3%28Red_Velvet%29_%EC%BC%80%EC%9D%B4%EC%BD%98_%EC%9E%AC%ED%8C%AC_2024_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_KCON_JAPAN_2024_%281%29.jpg"
-                    width="560" ; height="315" ; alt="Photo du groupe">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3%28Red_Velvet%29_%EC%BC%80%EC%9D%B4%EC%BD%98_%EC%9E%AC%ED%8C%AC_2024_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_KCON_JAPAN_2024_%281%29.jpg/1280px-%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3%28Red_Velvet%29_%EC%BC%80%EC%9D%B4%EC%BD%98_%EC%9E%AC%ED%8C%AC_2024_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_KCON_JAPAN_2024_%281%29.jpg"
+                width="560" ; height="315" ; alt="Photo du groupe">
 
             </a>
         </p>
@@ -198,7 +216,11 @@
 
 
         </ul>
+    </main>
+    <footer>
+<p>En savoir plus ; réseaux sociaux, sources, liens </p>
 
+    </footer>
 
 
 </body>
