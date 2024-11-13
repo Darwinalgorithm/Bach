@@ -15,9 +15,10 @@
 
                                         /*PROPRIETES GENERALES (réinitialisation)*/
 * {
-    margin: 0; 
+    margin: 15px; 
   padding: 0;
-  
+  block-size: 0%;
+  max-width: 800px;
  }
 
                          /*LES TYPOGRAPHIES*/
@@ -30,16 +31,64 @@
 
                     /*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
                     Donc ce n'est pas la propiété de l'ensemble comme bloc, mais de tous les élements (non spécifiés ensuite) */
-body{
 
+/*MANQUE TARGET ET UNE IMAGE PROPRE AU MAIN AU LIEU D4AVOIR LA MËME PARTOUT*/
+header {
+min-height: 20vh;
+background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
+
+
+}
+nav {
+position: fixed;
+margin: auto;
+font-size:xx-large;
+
+
+}
+
+.box {
+border-color: black;
+    border: 3px;
+    border-radius : 15px;
+    max-width: 10%;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+    /*les trois dernière propriétés n'ont rien fait...*/
+
+}
+
+
+body{
+ /*marrant l'image apparaît dans mon header? et pas dans le body*/
+
+
+}
+
+
+.backdrop {
+
+backdrop-filter: blur (15%);
+background-color: rgba(0, 0, 0, 0.701);
+border-radius: 15px;
+
+}
+
+main {
+    background-image:url(https://data.puzzle.fr/grafika-kids.143/grafika-kids-deutschland-edition-volkerschlachtdenkmal-leipzig-allemagne-by-night-puzzle-12-pieces.88325-1.fs.jpg);
+border: 25px;
+border-color: blueviolet;
+background-size: 100%;
+background-attachment: fixed;
 }
                                                                                           /*LES TITRES*/
 
 h1 {
     
     font-family: "Great Vibes", cursive;
-    font-weight: 325;
-    font-style: normal;
+    font-weight: 700;
+    font-style:normal;
     letter-spacing:7px;
     text-align:center;
     color:orange;
@@ -47,6 +96,8 @@ h1 {
     font-size:4.5rem;
     text-shadow:13px 18px 6px #00000042; /*suffit de taper #*/
     border-color: beige;
+    backdrop-filter: blur (10%);
+    background-color: rgba(240, 248, 255, 0.698);
 }
 
 
@@ -88,6 +139,19 @@ h6 {font-family: "Cinzel", serif;
 
 }
 
+aside {
+
+    width: 10%;
+    padding: 20px;
+    margin-left: 25px;
+    float: right;
+    border-left: 5px;
+    backdrop-filter: grup (15%);
+    background-color: rgba(0, 0, 0, 0.348);
+
+
+}
+
                                                                                   /*LES PARAGRAPHES*/
 
 p {font-family: "Roboto Condensed", sans-serif;
@@ -98,12 +162,19 @@ p {font-family: "Roboto Condensed", sans-serif;
 
 /* comme ça les commentaires un ouvrant un fermant*/
 /*et le backgroune ?? place ?*/
-a {color: white;}
+a {
+    color: white;
 
-li {list-style-type: none;}
-header
+text-decoration: none;
+font-style: italic;
+}
 
-{background-color: antiquewhite;
+li {
+list-style-type: none;
+}
+header /*incroyable, en enlevant juste ce header, je perd l'alignement de ma nav....*/
+
+{background-color: rgba(51, 97, 146, 0.632);
    
 
  /*pas d'espace entre url et () ah.. tous ses détails... et le réflexe de faire des espaces évidemment... mais mon image head n'apparaît tjs pas... oui 
@@ -152,16 +223,19 @@ background-color: grey;
 
 main {
     color: aliceblue;
-background: url(https://static.holidu.com/cms/7079/l/1342.jpg);
+background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
 min-height: 100vh; visibility: 100%; /*??? à revoir */
 text-align:"justify"; /*pas marché*/
+/*background-image: ; */
 }
+
+/*https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png */
 
                                                                                 /*FOOTER*/
 
 footer
 {
-background-color: black;
+    background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
 width: 100%;
 min-height: 20vh;
 color: azure;
