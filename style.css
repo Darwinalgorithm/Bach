@@ -15,8 +15,9 @@
 
                                         /*PROPRIETES GENERALES (réinitialisation)*/
 * {
-    margin: 15px; 
+  
   padding: 0;
+  margin: 0;
   block-size: 0%;
   max-width: 800px;
   font-size: large;
@@ -33,17 +34,27 @@
                     /*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
                     Donc ce n'est pas la propiété de l'ensemble comme bloc, mais de tous les élements (non spécifiés ensuite) */
 
-/*MANQUE TARGET ET UNE IMAGE PROPRE AU MAIN AU LIEU D4AVOIR LA MËME PARTOUT*/
+/*MANQUE TARGET ET UNE IMAGE PROPRE AU MAIN AU LIEU D'AVOIR LA MEME PARTOUT*/
+
+body {
+
+margin: 0;
+padding:0;}
+
+
 header {
 min-height: 20vh;
 background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
 
-
 }
+
+
+
 nav {
 position: absolute;
 margin: auto;
 font-size: large;
+display: flex;
 
 }
 
@@ -55,16 +66,32 @@ border-color: black;
    align-items: center;
    justify-content: center;
    margin-top: 15px;
+
     /*les trois dernière propriétés n'ont rien fait...*/
 
 }
+/*
+#imgBach {
 
-
-body{
- /*marrant l'image apparaît dans mon header? et pas dans le body*/
-
-
+   margin: auto;
+    width: 400px;
+    height: auto;
+    border-radius: 35px;
+    backdrop-filter: blur (15%);
 }
+
+.photo {
+
+   
+    width: 300px;
+    height: auto;
+    border-radius: 35px;
+    backdrop-filter: blur (15%);
+}
+
+/*body{
+ marrant l'image apparaît dans mon header? et pas dans le body*/
+
 
 
 .backdrop {
@@ -77,27 +104,30 @@ border-radius: 15px;
 
 main {
     background-image:url(https://data.puzzle.fr/grafika-kids.143/grafika-kids-deutschland-edition-volkerschlachtdenkmal-leipzig-allemagne-by-night-puzzle-12-pieces.88325-1.fs.jpg);
-border: 25px;
-border-color: blueviolet;
+
 background-size: 100%;
 background-attachment: fixed;
 }
                                                                                           /*LES TITRES*/
 
+
+                                                                                          
+/*JE NE COMPRENDS PAS POURQUOI IL Y AUN BLANC AU DESSUS DU TITRE*/
 h1 {
     
     font-family: "Great Vibes", cursive;
     font-weight: 700;
-    font-style:normal;
+    font-style: normal;
+    font-size: xx-large;
     letter-spacing:7px;
     text-align:center;
     color:orange;
     /*Les textes de polices doivent être en rem, pour l'accessibilité à tous et sur tout*/
-    font-size:4.5rem;
+    font-size:7rem;
     text-shadow:13px 18px 6px #00000042; /*suffit de taper #*/
     border-color: beige;
-    backdrop-filter: blur (10%);
-    background-color: rgba(240, 248, 255, 0.698);
+ 
+    
 }
 
 
@@ -147,7 +177,7 @@ aside {
     float: right;
     border-left: 5px;
     backdrop-filter: grup (15%);
-    background-color: rgba(0, 0, 0, 0.348);
+    background-color: rgba(59, 117, 136, 0.348);
 
 
 }
@@ -174,13 +204,13 @@ list-style-type: none;
 }
 header /*incroyable, en enlevant juste ce header, je perd l'alignement de ma nav....*/
 
-{background-color: rgba(51, 97, 146, 0.632);
+{background-color: rgba(22, 65, 110, 0.564);
    
-
+}
  /*pas d'espace entre url et () ah.. tous ses détails... et le réflexe de faire des espaces évidemment... mais mon image head n'apparaît tjs pas... oui 
 le point virgule, mais à présent ce n'est pas le header mais toutes la pajes qui est remplacée...Bon au moins le header est blanc... j'ai réussi, il suffisait de le sortir du main, et comme un con j'avais body auparavant à la place de main, cool, 
 en revanche cela masque le texte, ajouter de l'opacité ou transparence*/
-}
+
 
 /*
 .flexnav {
@@ -214,7 +244,8 @@ padding: 20px;
 margin: auto;
 justify-content: space-evenly;
 text-align: center;
-background-color: grey;
+background-color: rgba(23, 106, 141, 0.605);
+flex: 1 1 auto;
 
 
 /*il faut du fit content*/
