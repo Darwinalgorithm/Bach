@@ -19,6 +19,7 @@
   padding: 0;
   block-size: 0%;
   max-width: 800px;
+  font-size: large;
  }
 
                          /*LES TYPOGRAPHIES*/
@@ -40,10 +41,9 @@ background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silves
 
 }
 nav {
-position: fixed;
+position: absolute;
 margin: auto;
-font-size:xx-large;
-
+font-size: large;
 
 }
 
