@@ -1,15 +1,21 @@
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+                         /*LES TYPOGRAPHIES*/
+
+                         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
+                         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* GREAT VIBES POUR H1*/
+                         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap'); /*LA POLICE EN PETITE MAJUSCULE QUE JE CHERCHAIS !*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-/*sans l'enregistrement et sans le link la typo great vibes n'apparaissait pas*/
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400.900&family=Great+Vibes&display=swap" rel="stylesheet">
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
- 
+
 
 /*A FAIRE / LES TARGET SUR TOUTES LES VID2OS ET DES BOXS? L'IMAGE DE FOND? CELLE DU HEADER ET DU FOOTER*/
 
@@ -17,17 +23,12 @@
 * {
   
   padding: 0;
-  margin: 0;
-  block-size: 0%;
-  max-width: 800px;
-  font-size: large;
+  margin:0;
+  block-size:0%;
+
+  font-size:large;
  }
 
-                         /*LES TYPOGRAPHIES*/
-
-                         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
-                         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* GREAT VIBES POUR H1*/
-                         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap'); /*LA POLICE EN PETITE MAJUSCULE QUE JE CHERCHAIS !*/
 
 
 
@@ -114,20 +115,15 @@ background-attachment: fixed;
                                                                                           
 /*JE NE COMPRENDS PAS POURQUOI IL Y AUN BLANC AU DESSUS DU TITRE*/
 h1 {
-    
     font-family: "Great Vibes", cursive;
     font-weight: 700;
     font-style: normal;
     font-size: xx-large;
-    letter-spacing:7px;
-    text-align:center;
+    letter-spacing: 7px;
+    text-align: center;
     color:orange;
     /*Les textes de polices doivent être en rem, pour l'accessibilité à tous et sur tout*/
-    font-size:7rem;
-    text-shadow:13px 18px 6px #00000042; /*suffit de taper #*/
-    border-color: beige;
- 
-    
+    font-size: 7rem;
 }
 
 
