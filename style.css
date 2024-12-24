@@ -1,118 +1,84 @@
+/*LES TYPOGRAPHIES*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* ROBOTO CONDENSED POUR LE TEXTE*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* GREAT VIBES POUR H1*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap');
 
-                         /*LES TYPOGRAPHIES*/
-
-                         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
-                         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* GREAT VIBES POUR H1*/
-                         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&display=swap'); /*LA POLICE EN PETITE MAJUSCULE QUE JE CHERCHAIS !*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* ROBOTO CONDENSED POUR LE TEXTE*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* ROBOTO CONDENSED POUR LE TEXTE*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400.900&family=Great+Vibes&display=swap" rel="stylesheet">
-
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400.900&family=Great+Vibes&display=swap" rel="stylesheet">
 /*A FAIRE / LES TARGET SUR TOUTES LES VID2OS ET DES BOXS? L'IMAGE DE FOND? CELLE DU HEADER ET DU FOOTER*/
 
-                                        /*PROPRIETES GENERALES (réinitialisation)*/
+/*PROPRIETES GENERALES (réinitialisation)*/
 * {
-  
-  padding: 0;
-  margin:0;
-  block-size:0%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 
-  font-size:large;
- }
+}
 
 
+header, main, footer { border: 3px solid red}
 
-
-                    /*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
+/*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
                     Donc ce n'est pas la propiété de l'ensemble comme bloc, mais de tous les élements (non spécifiés ensuite) */
 
 /*MANQUE TARGET ET UNE IMAGE PROPRE AU MAIN AU LIEU D'AVOIR LA MEME PARTOUT*/
 
-body {
 
-margin: 0;
-padding:0;}
+/* BODY HEADER MAIN FOOTER TITRES PARAGRAPHES*/
+body {
+    margin: 0;
+    padding: 0;
+}
 
 
 header {
-min-height: 20vh;
-background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
-
+   height: 20vh;
+    background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
+    background-image: cover;
+  padding-bottom: 30px;
+  
 }
 
-
-
-nav {
-position: absolute;
-margin: auto;
-font-size: large;
-display: flex;
-
-}
-
-.box {
-border-color: black;
-    border: 3px;
-    border-radius : 15px;
-    max-width: 10%;
-   align-items: center;
-   justify-content: center;
-   margin-top: 15px;
-
-    /*les trois dernière propriétés n'ont rien fait...*/
-
-}
-/*
-#imgBach {
-
-   margin: auto;
-    width: 400px;
-    height: auto;
-    border-radius: 35px;
-    backdrop-filter: blur (15%);
-}
-
-.photo {
-
-   
-    width: 300px;
-    height: auto;
-    border-radius: 35px;
-    backdrop-filter: blur (15%);
-}
-
-/*body{
- marrant l'image apparaît dans mon header? et pas dans le body*/
-
-
-
-.backdrop {
-
-backdrop-filter: blur (15%);
-background-color: rgba(0, 0, 0, 0.701);
-border-radius: 15px;
-
-}
-
+/*le problème était le suivant (difficile !! 1.png.png soit unr*e double extension) / même pas l'image disparaît...*/
 main {
-    background-image:url(https://data.puzzle.fr/grafika-kids.143/grafika-kids-deutschland-edition-volkerschlachtdenkmal-leipzig-allemagne-by-night-puzzle-12-pieces.88325-1.fs.jpg);
+    background-image: url(https://data.puzzle.fr/grafika-kids.143/grafika-kids-deutschland-edition-volkerschlachtdenkmal-leipzig-allemagne-by-night-puzzle-12-pieces.88325-1.fs.jpg);
 
-background-size: 100%;
-background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 60vh;
 }
-                                                                                          /*LES TITRES*/
 
 
-                                                                                          
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+   
+    height: 20vh;
+}
+
+p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: justify;
+    color: white;
+}
+
+
 /*JE NE COMPRENDS PAS POURQUOI IL Y AUN BLANC AU DESSUS DU TITRE*/
 h1 {
     font-family: "Great Vibes", cursive;
@@ -121,18 +87,18 @@ h1 {
     font-size: xx-large;
     letter-spacing: 7px;
     text-align: center;
-    color:orange;
+    color: orange;
     /*Les textes de polices doivent être en rem, pour l'accessibilité à tous et sur tout*/
     font-size: 7rem;
 }
 
 
-h2 { 
+h2 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-   color: orange;
+    color: orange;
 }
 
 h3 {
@@ -143,26 +109,79 @@ h3 {
     color: orangered;
 }
 
-h4 { font-family: "Cinzel", serif;
+h4 {
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    color: orange;}
+    color: orange;
+}
 
-h5 {font-family: "Cinzel", serif;
+h5 {
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     color: orange;
 
-    }
+}
 
-h6 {font-family: "Cinzel", serif;
+h6 {
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     color: orange;
 
+}
+
+/*  NAV BOX LISTES */
+
+.grid {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+
+}
+.video {
+width: 100%;
+height: auto;
+border-radius: 15px;
+}
+
+.grid div {text-align: center;}
+
+nav {
+    position: absolute;
+    margin: auto;
+    font-size: large;
+    display: flex;
+
+}
+
+.box {
+
+    max-width: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border: none;
+}
+
+
+a {
+    color: white;
+
+    text-decoration: none;
+    font-style: italic;
+}
+
+li a {
+    list-style-type: none;
+   text-align: center;
+ 
+   font-size: 25px;
+   font-style: normal;
 }
 
 aside {
@@ -178,92 +197,57 @@ aside {
 
 }
 
-                                                                                  /*LES PARAGRAPHES*/
-
-p {font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    text-align: justify;}
-
-/* comme ça les commentaires un ouvrant un fermant*/
-/*et le backgroune ?? place ?*/
-a {
-    color: white;
-
-text-decoration: none;
-font-style: italic;
-}
-
-li {
-list-style-type: none;
-}
-header /*incroyable, en enlevant juste ce header, je perd l'alignement de ma nav....*/
-
-{background-color: rgba(22, 65, 110, 0.564);
-   
-}
- /*pas d'espace entre url et () ah.. tous ses détails... et le réflexe de faire des espaces évidemment... mais mon image head n'apparaît tjs pas... oui 
-le point virgule, mais à présent ce n'est pas le header mais toutes la pajes qui est remplacée...Bon au moins le header est blanc... j'ai réussi, il suffisait de le sortir du main, et comme un con j'avais body auparavant à la place de main, cool, 
-en revanche cela masque le texte, ajouter de l'opacité ou transparence*/
 
 
-/*
-.flexnav {
 
-    display: flex;
-    align-content: space-between ;
-    flex-wrap: wrap;
-border: 2px solid;
-margin:auto;
-padding: 10px;
-
-}*/
+/* CLASSES FONCTIONS*/
 
 .container {
-display: flex;
-display: inline-flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-margin: auto;
-padding: 10px;
-row-gap: 50px;
-}
+    display: flex;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+border: none;}
+   
 
 .flex {
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    flex: 1 1 auto;
 
-border: 2px solid;
-height: 80%;
-width: 40vh;
-padding: 20px;
-margin: auto;
-justify-content: space-evenly;
-text-align: center;
-background-color: rgba(23, 106, 141, 0.605);
-flex: 1 1 auto;
-
-
-/*il faut du fit content*/
+    /*il faut du fit content*/
 
 }
 
-main {
-    color: aliceblue;
-background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
-min-height: 100vh; visibility: 100%; /*??? à revoir */
-text-align:"justify"; /*pas marché*/
-/*background-image: ; */
+.backdrop {
+
+    backdrop-filter: blur (15%);
+    background-color: rgba(0, 0, 0, 0.701);
+    border-radius: 15px;
+
 }
 
-/*https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png */
 
-                                                                                /*FOOTER*/
 
-footer
-{
-    background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
-width: 100%;
-min-height: 20vh;
-color: azure;
+
+#imgBach {
+    width: 400px;
+    height: 500px;
+    border-radius: 30%;
+    margin: auto;
+    overflow: hidden; /*fait le rond avec le border radius 50%*/
+    border : solid 7px orange;
+ 
 }
+
+.photo {
+
+    width: 300px;
+    height: auto;
+    border-radius: 35px;
+    backdrop-filter: blur (15%);
+}
+
