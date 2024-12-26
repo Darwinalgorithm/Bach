@@ -22,13 +22,31 @@ box-sizing: border-box;
 }
 
 
-header, main, footer { border: 3px solid red}
+header, main, footer { border: 3px solid red;
+width: 100%; height: auto; flex:1; position: relative; overflow:auto} 
+
+header img, main img, footer img {position: relative;}
 
 /*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
                     Donc ce n'est pas la propiété de l'ensemble comme bloc, mais de tous les élements (non spécifiés ensuite) */
 
 /*MANQUE TARGET ET UNE IMAGE PROPRE AU MAIN AU LIEU D'AVOIR LA MEME PARTOUT*/
-
+img, iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto; 
+  }
+  .video img, .video iframe {
+    width: 560px;  
+    height: 315px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    border: 5px solid orange;
+    border-radius: 20px;
+  }
+  
 
 /* BODY HEADER MAIN FOOTER TITRES PARAGRAPHES*/
 body {
@@ -42,17 +60,19 @@ header {
     background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
     background-image: cover;
   padding-bottom: 30px;
-  
+  background-color: antiquewhite;
+  width: 100%;
 }
 
 /*le problème était le suivant (difficile !! 1.png.png soit unr*e double extension) / même pas l'image disparaît...*/
 main {
+    background-color: black;
     background-image: url(https://data.puzzle.fr/grafika-kids.143/grafika-kids-deutschland-edition-volkerschlachtdenkmal-leipzig-allemagne-by-night-puzzle-12-pieces.88325-1.fs.jpg);
 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
+    width: 100%;
     height: 60vh;
 }
 
@@ -65,8 +85,9 @@ footer {
     background-size: cover;
     margin: 0;
     background-repeat: no-repeat;
-   
+    max-width: 100%;
     height: 20vh;
+    height: auto;
 }
 
 p {
