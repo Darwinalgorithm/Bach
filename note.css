@@ -1,2 +1,13 @@
 à faire : 
 les target, le background, les pixels,
+j'ai eu beaucoup de problèmes jusqu'à voir le footer dans le header, faut le faire !
+les images en bacground sont anormalement problématiques. 
+apparemment les problèmes venaient des position absolute et relative, mais surtout peut-être d'un code
+trop volumineux pour moi, avec surtout la multiplication de propriétés diverses actives ou pas.
+Bref, je comprends que parfois certains effacent totu et reprennent. Le code pousse à la 
+plus grande rigueur. Et je suis léger, et j'en rajoute...
+j'ai trouvé très utile de pouvoir faire des grosses catégories comme
+header img, main img, footer img {position: relative;} 
+qui a réglé pas mal des problèmes que 
+j'avais involontairement ajoutés.
+Moralité revoir les positions. 
