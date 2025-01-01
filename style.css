@@ -22,10 +22,20 @@ box-sizing: border-box;
 }
 
 
-header, main, footer { border: 3px solid red;
+header, main, footer {
 width: 100%; height: auto; flex:1; position: relative; overflow:auto} 
 
 header img, main img, footer img {position: relative;}
+
+header li {
+    list-style: none; 
+    text-align: center;
+    font-size: 34px;
+    text-decoration: none;
+    line-height: normal;
+    flex:1;
+    font-weight: 700;
+}
 
 /*RMQ : j'avais pour je ne sais quelles raisons ajouté ici marges et padding, et du min-height, si bien que mon header se trouvait anormalement espacé. 
                     Donc ce n'est pas la propiété de l'ensemble comme bloc, mais de tous les élements (non spécifiés ensuite) */
@@ -52,17 +62,22 @@ img, iframe {
 body {
     margin: 0;
     padding: 0;
+    line-height: 2;
 }
 
 
 header {
    height: 20vh;
     background-image: url(https://www.urbanite.net/wp-content/uploads/2014/12/silvester_philipp_kirschner_1.png.png);
-    background-image: cover;
+
   padding-bottom: 30px;
   background-color: antiquewhite;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 }
+header nav {display:flex; justify-content: center; align-items: center;}
+/*le cover n'a été effectif qu'après BG Pos center, va comprendre...*/
 
 /*le problème était le suivant (difficile !! 1.png.png soit unr*e double extension) / même pas l'image disparaît...*/
 main {
@@ -86,19 +101,21 @@ footer {
     margin: 0;
     background-repeat: no-repeat;
     max-width: 100%;
-    height: 20vh;
     height: auto;
+   
 }
 
 p {
     font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     text-align: justify;
     color: white;
+    font-size: 18px;
 }
 
+li {color: white; font-size: 18px;}
+a {color: white; font-size: 18px; text-decoration: none;}
 
 /*JE NE COMPRENDS PAS POURQUOI IL Y AUN BLANC AU DESSUS DU TITRE*/
 h1 {
@@ -119,6 +136,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    font-size: 25px;
     color: orange;
 }
 
@@ -127,7 +145,8 @@ h3 {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    color: orangered;
+    font-size: 20px;
+    color: orange;
 }
 
 h4 {
@@ -136,6 +155,7 @@ h4 {
     font-weight: weight;
     font-style: normal;
     color: orange;
+    font-size: 18px;
 }
 
 h5 {
@@ -144,7 +164,7 @@ h5 {
     font-weight: weight;
     font-style: normal;
     color: orange;
-
+    font-size: 16px;
 }
 
 h6 {
@@ -153,7 +173,7 @@ h6 {
     font-weight: weight;
     font-style: normal;
     color: orange;
-
+    font-size: 14px;
 }
 
 /*  NAV BOX LISTES */
@@ -190,20 +210,6 @@ nav {
 }
 
 
-a {
-    color: white;
-
-    text-decoration: none;
-    font-style: italic;
-}
-
-li a {
-    list-style-type: none;
-   text-align: center;
- 
-   font-size: 25px;
-   font-style: normal;
-}
 
 aside {
 
@@ -228,6 +234,7 @@ aside {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     margin: auto;
 border: none;}
@@ -243,13 +250,7 @@ border: none;}
 
 }
 
-.backdrop {
 
-    backdrop-filter: blur (15%);
-    background-color: rgba(0, 0, 0, 0.701);
-    border-radius: 15px;
-
-}
 
 
 
